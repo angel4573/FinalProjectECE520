@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="PMOD_color_system-bitFile" value="${project_loc:PMOD_color}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="PMOD_color_system-bmmFile" value=""/>
+	<item key="PMOD_color_system-target" value="Local"/>
+	<item key="PMOD_color_system-device" value="Auto Detect"/>
+	<item key="PMOD_color_system-partial_bit" value="false"/>
+	<item key="PMOD_color_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="PMOD_color_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo Z7 210351AF24D3A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo Z7-210351AF24D3A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo Z7-210351AF24D3A-13722093-0&quot;}}]}"/>
+</section>

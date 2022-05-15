@@ -1,0 +1,29 @@
+20:05:02 **** Build of configuration Debug for project PMOD_color ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/zynq_ps_main_c.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_ps_main_c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/angel/ECE520L/final_project/software/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/zynq_ps_main_c.d" -MT"src/zynq_ps_main_c.o" -o "src/zynq_ps_main_c.o" "../src/zynq_ps_main_c.c"
+../src/zynq_ps_main_c.c: In function 'DemoRun':
+../src/zynq_ps_main_c.c:68:5: warning: unused variable 'ID' [-Wunused-variable]
+   68 |  u8 ID, buf[1];
+      |     ^~
+Finished building: ../src/zynq_ps_main_c.c
+ 
+Building target: PMOD_color.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/angel/ECE520L/final_project/software/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "PMOD_color.elf"  ./src/zynq_ps_main_c.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PMOD_color.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PMOD_color.elf  |tee "PMOD_color.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29914	   1176	  22760	  53850	   d25a	PMOD_color.elf
+Finished building: PMOD_color.elf.size
+ 
+
+20:05:03 Build Finished (took 683ms)
+
